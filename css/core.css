@@ -1,0 +1,195 @@
+  /* SOLO PER IL PARALLAX */
+  html,body {
+    overflow: hidden;
+  }
+
+  #mainview {
+    height: 100vh;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    perspective: 1px;
+    transform-style: preserve-3d;
+  }
+
+  .section, footer {
+    position: relative;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+
+  .section-parallax {
+    width: 100vw;
+    height: 75vh;                     /*line-height: 75vh;*/
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+  }
+
+  .section-parallax::before {
+    content:"";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-size: cover;
+    background-position: center;
+    transform:translateZ(-1px) scale(2);
+    z-index: -1;
+  }
+
+
+/* CUSTOM NAVBAR */
+
+  #navbar {
+    height: 85px;
+    background-color: transparent;
+    background-image: url('../assets/navbar/navbar.png');
+    background-position: bottom center;
+    background-size: auto;
+    background-repeat: repeat;
+    position: sticky;
+    top: 0;
+    z-index: 997;
+  }
+
+  #logo {
+    height: 75px;
+  }
+
+  #navbar h1 {
+    margin: 0;
+  }
+
+  #navbar li a, #sidenav li a {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #1a237e;
+  }
+
+  #navbar #dropdown1 li a {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #1a237e;
+  }
+
+  #navbar ul a:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #FFFFFF !important;
+  }
+
+  #navbar ul li.active, #navbar ul li.active a {
+    background-color: rgba(0, 0, 0, 0);
+    color: #FFFFFF !important;
+    border-bottom: 2px solid #1a237e;
+  }
+
+  #navbar ul #dropdown1 a:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #1a237e !important;
+  }
+
+  #navbar ul #dropdown1 li.active, #navbar ul #dropdown1 li.active a {
+    background-color: rgba(0, 0, 0, 0);
+    color: #1a237e !important;
+    border-bottom: 2px solid #1a237e;
+  }
+
+  #sidenav {
+    background-image: url('../assets/navbar/navbar_pattern.png');
+    background-position: bottom center;
+    background-size: auto;
+    background-repeat: repeat;
+  }
+
+  .sidenav > li.indented > a {
+    padding-left: 48px;
+  }
+
+  #navbar + section {
+    margin-top: -15px;
+  }
+
+
+  /* PILLOLA SOCIAL */
+
+  .pillola {
+    display: inline-block;
+    height: 56px;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 0px 12px;
+    border-radius: 28px;
+    background-color: #e4e4e4;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  .pillola:hover {
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  }
+
+  .pillola > p {
+    display: inline-block;
+    margin-top: 14px;
+    margin-left: 6px;
+  }
+
+  .pillola > img {
+    float: right;
+    margin: 3px -10px 0 0px;
+    width: 58px;
+
+    border-radius: 50%;
+  }
+
+
+
+/* ALTRA ROBA */
+
+  .divider {
+    height: 2px;
+  }
+
+  section h2 {
+  	color: #2962FF;
+  }
+
+  .fill-view {
+    width: 100%;
+    height: auto;
+  }
+
+  div.wrap-content {
+  	display: inline-block;
+  }
+
+  div.wrap-content::after {
+    content: "\A";
+    white-space: pre;
+  }
+
+  .row .col {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  #footer-logo{
+    max-height: 100px;
+  }
+
+
+
+
+
+
+/*linear-gradient(to bottom, #001e96, #0040af, #005ec3, #007bd4, #0097e1, #00b2f3)
+
+a, a:hover {
+	text-decoration: none;
+	color:inherit;
+	pointer-events:all;
+}*/

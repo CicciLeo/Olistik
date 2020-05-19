@@ -1,0 +1,36 @@
+  #navbar {
+    background-image: none;
+  }
+
+  #navbar-padding {
+    position: relative;
+    width: 100%;
+    height: calc( (100vw / 2.1 ) - 75px );
+    max-height: 525px;
+    margin-top: -85px;
+    background-image: url('../assets/navbar/navbar_pattern.png');
+    background-position: center bottom;
+    background-repeat: repeat;
+    z-index: 900;
+  }
+
+  #navbar-background {          /* solo index*/
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 85px;
+    background-image: url('../assets/navbar/navbar.png');
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    z-index: 900;
+  }
+
+  #logo {
+    min-height: 75px;
+    height: calc( (100vw / 2.1 ) );
+    max-height: 600px;
+  }
+
+  .section-parallax.prato::before {
+    background-image: url("../assets/index/prato.jpg");
+  }
